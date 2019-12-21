@@ -9,7 +9,7 @@
 
 Git cloan the repository and install the requirements:
 
-    λ: git clone "github link"
+    λ: git clone "https://github.com/UthejDalavai/Project_Initialization_Tool.git"
     λ: cd ./Project_Initialization_Tool
     λ: pip install -r requirements
 
