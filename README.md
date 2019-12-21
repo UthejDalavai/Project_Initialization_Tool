@@ -1,5 +1,9 @@
 # Project_Initialization_Tool
 
+**Note:** This Project is developed only for windows users.
+
+add the path of this directory in Environmental Variables to make this work globally.
+
 ### Download the tool & install:
 
 > Make a workspace directory which holds all your projects - **ex: "My projects"**
