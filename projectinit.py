@@ -19,11 +19,11 @@ folderName = str(args.name)
 try:
     if args.d:
         os.system('rmdir /S /Q "{}"'.format(PATH))
-        os.system('cmd /c "python "F:/My Projects/Project Init/create.py" {0} {1} {2}"'.format(folderName, args.p, args.d))
+        os.system('cmd /c "python "{0}Project_Initialization_Tool/create.py" {1} {2} {3}"'.format(path,folderName, args.p, args.d))
         print("\nSuccesfully deleted project folder named '{}'\n".format(folderName))    
     else:
         os.makedirs(PATH)
-        os.system('cmd /c "python "F:/My Projects/Project Init/create.py" {0} {1} {2}"'.format(folderName, args.p, args.d))
+        os.system('cmd /c "python "{0}Project_Initialization_Tool/create.py" {1} {2} {3}"'.format(path,folderName, args.p, args.d))
         os.system('cmd /c "cd {0} && git init && git remote add origin https://github.com/UthejDalavai/{1}.git && touch README.md"'.format(PATH, folderName))
         os.system('cmd /c "cd {0} && git add . && git commit -m "Initial commit" && git push -u origin master && git checkout -b dev && git push origin dev && git push --set-upstream origin dev && code ."'.format(PATH))
         print("\nSuccesfully created project folder named '{}'\n".format(folderName))
